@@ -4,5 +4,6 @@ Comment=Clone of the C64 Game Paradroid
 Comment[pl]=Klon gry Paranoid z C64
 Exec=freedroid
 Terminal=0
+Icon=freedroid.png
 Type=Application
 # vi: encoding=utf-8
