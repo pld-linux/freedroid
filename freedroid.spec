@@ -4,7 +4,7 @@ Name:		freedroid
 Version:	1.0.2
 Release:	3
 License:	GPL
-Group:		Applications/Games
+Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	585a65f61c2cd308ab45d5c514f695dc
 Source1:	%{name}.desktop
