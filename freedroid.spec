@@ -5,7 +5,7 @@ Version:	1.0.1
 Release:	2
 License:	GPL
 Group:		Applications/Games
-Source0:	http://dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	a4350ce4695d1ab65db7b6e1d7124863
 Source1:	%{name}.desktop
 URL:		http://freedroid.sourceforge.net/
@@ -33,13 +33,12 @@ ulepszeniami i dodatkami.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
-install -d $RPM_BUILD_ROOT/%{_applnkdir}/Games
+install -d $RPM_BUILD_ROOT%{_applnkdir}/Games
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT/%{_applnkdir}/Games
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
 
 %clean
 rm -rf $RPM_BUILD_ROOT
