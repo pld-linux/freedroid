@@ -2,7 +2,7 @@ Summary:	Clone of the C64 Game Paradroid
 Summary(pl):	Klon gry Paranoid z C64
 Name:		freedroid
 Version:	1.0.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
@@ -34,12 +34,12 @@ ulepszeniami i dodatkami.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/Games,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
@@ -50,6 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
-%{_applnkdir}/Games/*
+%{_desktopdir}/*
 %{_pixmapsdir}/*
 %{_mandir}/man6/*
