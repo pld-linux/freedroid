@@ -2,16 +2,17 @@ Summary:	Clone of the C64 Game Paradroid
 Summary(pl):	Klon gry Paranoid z C64
 Name:		freedroid
 Version:	1.0.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	a4350ce4695d1ab65db7b6e1d7124863
 Source1:	%{name}.desktop
+Source2:	%{name}.png
 URL:		http://freedroid.sourceforge.net/
 BuildRequires:	SDL-devel >= 1.2.3
-BuildRequires:	SDL_mixer-devel
 BuildRequires:	SDL_image-devel
+BuildRequires:	SDL_mixer-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -33,12 +34,13 @@ ulepszeniami i dodatkami.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Games
+install -d $RPM_BUILD_ROOT{%{_applnkdir}/Games,%{_pixmapsdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -49,4 +51,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
 %{_applnkdir}/Games/*
+%{_pixmapsdir}/*
 %{_mandir}/man6/*
