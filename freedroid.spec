@@ -23,7 +23,7 @@ This is a clone of the classic game "Paradroid" on Commodore 64 with
 some improvements and extensions to the classic version.
 
 %description -l pl
-Jest to klon klasycznej gry "Paranoid" na Commodore 64 z kilkoma
+Jest to klon klasycznej gry "Paradroid" na Commodore 64 z kilkoma
 ulepszeniami i dodatkami.
 
 %prep
