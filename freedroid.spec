@@ -6,8 +6,9 @@ Release:	2
 License:	GPL
 Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:  a4350ce4695d1ab65db7b6e1d7124863
+# Source0-md5:	a4350ce4695d1ab65db7b6e1d7124863
 Source1:	http://dl.sourceforge.net/sourceforge/%{name}/Freedroid_Manual.ps.bz2
+# Source1-md5:	668e4f6eb371ef7449384a5dacc3c49e
 Source2:	%{name}.desktop
 URL:		http://freedroid.sourceforge.net/
 BuildRequires:	SDL-devel >= 1.2.3
