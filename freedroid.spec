@@ -2,7 +2,7 @@ Summary:	Clone of the C64 Game Paradroid
 Summary(pl):	Klon gry Paranoid z C64
 Name:		freedroid
 Version:	1.0.2
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
