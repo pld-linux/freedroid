@@ -13,6 +13,7 @@ URL:		http://freedroid.sourceforge.net/
 BuildRequires:	SDL-devel >= 1.2.3
 BuildRequires:	SDL_image-devel
 BuildRequires:	SDL_mixer-devel
+BuildRequires:	automake
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -29,6 +30,7 @@ ulepszeniami i dodatkami.
 %setup -q
 
 %build
+cp /usr/share/automake/config.sub .
 %configure
 %{__make}
 
