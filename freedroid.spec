@@ -7,7 +7,7 @@ License:	GPL
 Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	a4350ce4695d1ab65db7b6e1d7124863
-Source2:	%{name}.desktop
+Source1:	%{name}.desktop
 URL:		http://freedroid.sourceforge.net/
 BuildRequires:	SDL-devel >= 1.2.3
 BuildRequires:	SDL_mixer-devel
@@ -39,7 +39,7 @@ install -d $RPM_BUILD_ROOT/%{_applnkdir}/Games
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE2} $RPM_BUILD_ROOT/%{_applnkdir}/Games
+install %{SOURCE1} $RPM_BUILD_ROOT/%{_applnkdir}/Games
 
 %clean
 rm -rf $RPM_BUILD_ROOT
