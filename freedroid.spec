@@ -1,5 +1,5 @@
 Summary:	Clone of the C64 Game Paradroid
-Summary(pl):	Klon gry Paranoid z C64
+Summary(pl):	Klon gry Paradroid z C64
 Name:		freedroid
 Version:	1.0.2
 Release:	4
