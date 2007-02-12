@@ -1,5 +1,5 @@
 Summary:	Clone of the C64 Game Paradroid
-Summary(pl):	Klon gry Paradroid z C64
+Summary(pl.UTF-8):   Klon gry Paradroid z C64
 Name:		freedroid
 Version:	1.0.2
 Release:	5
@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This is a clone of the classic game "Paradroid" on Commodore 64 with
 some improvements and extensions to the classic version.
 
-%description -l pl
+%description -l pl.UTF-8
 Jest to klon klasycznej gry "Paradroid" na Commodore 64 z kilkoma
 ulepszeniami i dodatkami.
 
