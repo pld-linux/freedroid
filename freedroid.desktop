@@ -1,11 +1,10 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=freedroid
 Comment=Clone of the C64 Game Paradroid
 Comment[pl]=Klon gry Paranoid z C64
 Exec=freedroid
 Terminal=false
-Icon=freedroid.png
+Icon=freedroid
 Type=Application
 Categories=Game;ArcadeGame;
 # vi: encoding=utf-8
